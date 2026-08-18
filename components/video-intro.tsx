@@ -37,10 +37,10 @@ export default function VideoIntro({ onComplete, onSkip }: VideoIntroProps) {
       onClick={handleClick}
     >
       <div className="w-full h-full flex items-center justify-center bg-black">
-        <video 
+        <video
           ref={videoRef}
-          className="w-full h-full object-contain"
-          style={{ width: '100vw', height: '100dvh', objectPosition: 'center' }}
+          className="w-full h-full object-cover"
+          style={{ width: '100vw', height: '100svh', objectPosition: 'center' }}
           playsInline={true}
           muted={true}
           autoPlay={false}

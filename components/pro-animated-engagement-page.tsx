@@ -307,7 +307,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad, introFinished }
                 key="invitation-video"
                 ref={invitationVideoRef}
                 src="/invitation-design.mp4"
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center' }}
                 autoPlay
                 muted
                 playsInline
@@ -321,45 +321,6 @@ export default function ProAnimatedEngagementPage({ onImageLoad, introFinished }
 
         <div className="mt-6 w-full max-w-2xl mx-auto text-center px-4">
         </div>
-
-        {/* Minimal Scroll Down Indicator - Center bottom */}
-        <motion.button
-          onClick={() => {
-            const countdownSection = document.querySelector('section[class*="pt-0"]') || document.querySelector('section[style*="countdown-bg.jpg"]');
-            countdownSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-20 cursor-pointer group"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2, duration: 1 }}
-        >
-          <span className="text-[11px] uppercase tracking-[0.3em] text-white font-bold drop-shadow-md mb-1">
-            {language === 'ar' ? 'اسحب لأسفل' : 'Scroll'}
-          </span>
-          <motion.div
-            animate={{ y: [0, 5, 0] }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="text-white drop-shadow-md group-hover:scale-110 transition-transform"
-          >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              strokeWidth={2.5}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-              />
-            </svg>
-          </motion.div>
-        </motion.button>
 
         {/* Animated floating background elements */}
         <motion.div

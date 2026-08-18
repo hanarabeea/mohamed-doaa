@@ -666,6 +666,32 @@ export default function ProAnimatedEngagementPage({ onImageLoad, introFinished }
       {/* Photo Upload Section */}
       <PhotoUploadSection />
 
+      {/* Decorative Verse Image */}
+      <motion.section
+        className="relative py-12 px-4 md:py-16"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={fadeIn}
+      >
+        <div className="max-w-md md:max-w-lg mx-auto">
+          <div
+            className="relative overflow-hidden rounded-2xl shadow-lg"
+            style={{
+              maskImage: 'linear-gradient(to bottom, transparent, black 12%, black 88%, transparent)',
+              WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 12%, black 88%, transparent)',
+            }}
+          >
+            <img
+              src="/pic.jpeg"
+              alt=""
+              className="w-full h-auto object-cover opacity-90"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background/30" />
+          </div>
+        </div>
+      </motion.section>
+
       {/* Footer */}
       <motion.footer
         className="relative py-24 text-center bg-gradient-to-t from-accent/10 to-transparent"

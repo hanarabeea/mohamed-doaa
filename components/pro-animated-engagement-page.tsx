@@ -302,7 +302,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad, introFinished }
           variants={scaleIn}
         >
           {introFinished && (
-            <div className="video-container-fix" style={{ height: '100dvh', width: '100vw', position: 'relative', backgroundColor: 'black', overflow: 'hidden' }}>
+            <div className="video-container-fix" style={{ height: '100svh', width: '100vw', position: 'relative', backgroundColor: 'black', overflow: 'hidden' }}>
               <video
                 key="invitation-video"
                 ref={invitationVideoRef}
@@ -392,7 +392,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad, introFinished }
       <section className="relative px-4 pb-10 md:pb-14">
         <div className="max-w-4xl mx-auto">
           <div className="text-center">
-            <p className="font-heading text-2xl sm:text-3xl md:text-5xl text-foreground italic leading-relaxed">
+            <p className="font-luxury not-italic font-semibold text-xl sm:text-2xl md:text-3xl text-foreground leading-relaxed">
               {t('breakingNews')}
             </p>
             <div className="mt-6 flex items-center justify-center gap-4">

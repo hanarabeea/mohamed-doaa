@@ -602,19 +602,79 @@ export default function ProAnimatedEngagementPage({ onImageLoad, introFinished }
         viewport={{ once: true, margin: "-100px" }}
         variants={fastStaggerContainer}
       >
-        <div className="max-w-3xl mx-auto text-center">
-          <motion.h2
-            className="font-heading font-luxury text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6 tracking-wide"
-            variants={slideUp}
+        <div className="max-w-3xl mx-auto">
+          <motion.div
+            className="relative bg-gradient-to-br from-card/95 via-card/90 to-accent/10 backdrop-blur-sm border-4 border-accent/40 p-8 md:p-12 shadow-2xl text-center"
+            initial={{ scale: 0.95, opacity: 0, y: 50 }}
+            whileInView={{ scale: 1, opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            style={{
+              clipPath: 'polygon(8% 0%, 92% 0%, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0% 92%, 0% 8%)',
+            }}
           >
-            {t('dressCodeTitle')}
-          </motion.h2>
-          <motion.p
-            className="font-luxury text-xl md:text-2xl text-muted-foreground italic"
-            variants={fadeIn}
-          >
-            {t('dressCodeDescription')}
-          </motion.p>
+            {/* Decorative corner accents */}
+            <motion.div
+              className="absolute -top-3 -left-3"
+              initial={{ scale: 0, rotate: -180 }}
+              whileInView={{ scale: 1, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2, type: "spring" }}
+            >
+              <svg className="w-10 h-10 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+              </svg>
+            </motion.div>
+            <motion.div
+              className="absolute -top-3 -right-3"
+              initial={{ scale: 0, rotate: 180 }}
+              whileInView={{ scale: 1, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3, type: "spring" }}
+            >
+              <svg className="w-10 h-10 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+              </svg>
+            </motion.div>
+            <motion.div
+              className="absolute -bottom-3 -left-3"
+              initial={{ scale: 0, rotate: 180 }}
+              whileInView={{ scale: 1, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4, type: "spring" }}
+            >
+              <svg className="w-10 h-10 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+              </svg>
+            </motion.div>
+            <motion.div
+              className="absolute -bottom-3 -right-3"
+              initial={{ scale: 0, rotate: -180 }}
+              whileInView={{ scale: 1, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5, type: "spring" }}
+            >
+              <svg className="w-10 h-10 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+              </svg>
+            </motion.div>
+
+            <div className="relative z-10">
+              <motion.h2
+                className="font-heading font-luxury text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6 tracking-wide"
+                variants={slideUp}
+              >
+                {t('dressCodeTitle')}
+              </motion.h2>
+              <div className="w-32 h-px bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-6" />
+              <motion.p
+                className="font-luxury text-xl md:text-2xl text-muted-foreground italic"
+                variants={fadeIn}
+              >
+                {t('dressCodeDescription')}
+              </motion.p>
+            </div>
+          </motion.div>
         </div>
       </motion.section>
 

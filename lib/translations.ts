@@ -319,8 +319,8 @@ export const translations: Translations = {
     ar: 'أو اضغط أدناه لرفع صورك مباشرة',
   },
   breakingNews: {
-    en: 'Breaking News: Al-Sharqawy has left the squirrel list!',
-    ar: 'عاجل: الشرقاوي غادر قائمة السناجل',
+    en: 'Breaking News: The Shark has finally been caught!',
+    ar: 'خبر عاجل الشرقاوي غادر قائمه السناجل',
   },
   dressCodeTitle: {
     en: 'Dress Code',

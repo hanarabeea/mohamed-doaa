@@ -103,12 +103,12 @@ export const translations: Translations = {
     ar: 'قاعه سي جاردن، نادي 6 اكتوبر، الأنفوشي، بحري',
   },
   rsvpTitle: {
-    en: 'Will You Join Us?',
-    ar: 'هل ستنضم إلينا؟',
+    en: 'Will You Make It to the Wedding?',
+    ar: 'هتقدروا تيجوا الفرح؟',
   },
   rsvpDescription: {
-    en: 'We would be honored to have you celebrate with us on our special day',
-    ar: 'سيكون لنا الشرف بوجودكم معنا في يومنا الخاص',
+    en: "In a day we've long awaited, we're delighted to have you with us 🤍",
+    ar: 'في يومٍ انتظرناه طويلًا، يسعدنا أن تكونوا معنا 🤍',
   },
   rsvpButton: {
     en: 'RSVP Now',
@@ -227,8 +227,8 @@ export const translations: Translations = {
     ar: 'الرجاء إدخال الاسم وكتابة رسالة',
   },
   footerMessage: {
-    en: "can't wait to celebrate with you",
-    ar: 'لا نطيق الانتظار للاحتفال معكم'
+    en: 'having you with us completes our joy 🤍',
+    ar: 'وجودكم بيننا يكمّل فرحتنا 🤍'
   },
   sendingMessage: {
     en: 'Sending your message...',
@@ -319,16 +319,16 @@ export const translations: Translations = {
     ar: 'أو اضغط أدناه لرفع صورك مباشرة',
   },
   breakingNews: {
-    en: 'Breaking News: The Shark has finally been caught!',
-    ar: 'خبر عاجل: تم القبض على القرش أخيراً!',
+    en: 'Breaking News: Al-Sharqawy has left the squirrel list!',
+    ar: 'عاجل: الشرقاوي غادر قائمة السناجل',
   },
   dressCodeTitle: {
     en: 'Dress Code',
     ar: 'الزي المناسب',
   },
   dressCodeDescription: {
-    en: "It's a beach wedding at sunset — dress comfortably and beach-appropriate.",
-    ar: 'حفل زفاف على الشاطئ عند الغروب - يُرجى ارتداء ملابس مريحة ومناسبة للشاطئ.',
+    en: "It's an open-air, seaview, sunset wedding — dress accordingly.",
+    ar: 'حفل زفاف في الهواء الطلق، بإطلالة على البحر عند الغروب - يُرجى ارتداء ملابس مناسبة.',
   },
 };
 
